@@ -106,20 +106,6 @@ ENV/
 timeline*.json
 
 # project customs 
-/tmp
-/models/graph/cmu*/*.pb
-/models/trained/*/checkpoint
-/models/trained/*/*.pb
-/models/trained/*/model-*.data-*
-/models/trained/*/model-*.index
-/models/trained/*/model-*.meta
-/models/pretrained/resnet_v2_101/eval.graph
-/models/pretrained/resnet_v2_101/train.graph
-/src/pafprocess/pafprocess.py
-/src/pafprocess/pafprocess_wrap.cpp
-/src/pafprocess/pafprocess_wrap.cxx
-
-# Linux
 tmp
 models/graph/cmu*/*.pb
 models/trained/*/checkpoint
@@ -132,3 +118,4 @@ models/pretrained/resnet_v2_101/train.graph
 src/pafprocess/pafprocess.py
 src/pafprocess/pafprocess_wrap.cpp
 src/pafprocess/pafprocess_wrap.cxx
+mp4

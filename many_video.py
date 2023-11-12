@@ -2,6 +2,7 @@ import cv2
 from tf_pose.estimator import TfPoseEstimator
 from tf_pose.networks import get_graph_path, model_wh
 import os
+import sys
 import time
 import json
 import glob
@@ -13,10 +14,10 @@ w, h = model_wh('432x368')
 e = TfPoseEstimator(get_graph_path(model), target_size=(w, h))
 
 # 処理する動画ファイルがあるフォルダ
-video_folder = 'tf-pose-estimation/'
+video_folder = 'C:\Users\pana8\Documents\卒業研究\video\20170104\mp4'
 
 # フォルダ内のすべてのmp4ファイルを取得
-video_files = glob.glob(os.path.join(video_folder, 'video.mp4'))
+video_files = glob.glob(os.path.join(video_folder, '*.mp4'))
 for video_file in video_files:
     cap = cv2.VideoCapture(video_file)
     if not cap.isOpened():
